@@ -71,7 +71,6 @@ let req = new Request(url, {
 })
   
 fetch(req ).then(function(result){
-  console.log("here")
  return result.json();  
 }).then(function(data){
     joke = data.content;
