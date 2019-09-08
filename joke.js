@@ -1,6 +1,6 @@
 const TEXT = document.getElementById("text");
 const CHUCKJOKE = document.getElementById("chuck-norris");
-const DADJOKE = document.getElementById("dad-joke");
+const NEWDAD = document.getElementById("dad-joke");
 const NEWJOKE = document.getElementById("new-joke");
 const TWEET = document.getElementById("tweet-quote");
 let current;
@@ -12,7 +12,7 @@ CHUCKJOKE.addEventListener("click",function(){
   NEWCHUCK();
 },false);
 //This listens for the dad joke button and evokes the functions once clicked
-DADJOKE.addEventListener("click",function(){
+NEWDAD.addEventListener("click",function(){
   DADJOKE();
 },false);
 //This listens for the normal joke button and evokes the functions once clicked
@@ -71,6 +71,7 @@ let req = new Request(url, {
 })
   
 fetch(req ).then(function(result){
+  console.log("here")
  return result.json();  
 }).then(function(data){
     joke = data.content;
