@@ -24,7 +24,8 @@ p{
 }
 #tweet-quote{
 font-size:4rem;
-color:#1da1f2; 
+color:#1da1f2;
+display:inline-block;
 }
 #tweet-quote:hover, #tweet-quote:focus{
   color:blue;
@@ -79,6 +80,7 @@ Buttons
  background:gray;
  color:#e0efff;
  margin-bottom:2em;
+ display:inline-block;
 }
 .new-quote:focus, .new-quote:hover  {
     color:black;      
