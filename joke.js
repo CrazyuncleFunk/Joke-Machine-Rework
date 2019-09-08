@@ -76,7 +76,6 @@ fetch(req ).then(function(result){
     joke = data.content;
   current = joke;
   TEXT.innerHTML = data.content;
-  console.log(data.content)
 });
   };
 //This fuction requests a random dad joke from the dad joke api then changes the display text to the joke
